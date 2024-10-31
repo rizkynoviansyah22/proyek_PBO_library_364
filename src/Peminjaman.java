@@ -1,7 +1,7 @@
-public class TransaksiPeminjaman extends Transaksi {
+public class Peminjaman extends Transaksi {
 
-    public TransaksiPeminjaman(Anggota anggota, Buku buku) {
-        super(anggota, buku); // Inheritance
+    public Peminjaman(Anggota anggota, Buku buku) {
+        super(anggota, buku);
     }
 
 
@@ -22,7 +22,9 @@ public class TransaksiPeminjaman extends Transaksi {
 
         if (buku.getStok() > 0) {
             buku.kurangiStok();
-            System.out.println("\nPeminjaman berhasil: " + anggota.getNama() + " meminjam " + buku.getJudul());
+            System.out.println("============================================================");
+            System.out.println("Peminjaman berhasil: " + anggota.getNama() + " meminjam " + buku.getJudul());
+            System.out.println("============================================================");
         } else {
             System.out.println("\nStok habis untuk buku: " + buku.getJudul());
         }

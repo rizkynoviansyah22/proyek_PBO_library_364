@@ -1,9 +1,10 @@
-public class TransaksiPengembalian extends Transaksi {
+public class Pengembalian extends Transaksi {
 
-    public TransaksiPengembalian(Anggota anggota, Buku buku) {
+    public Pengembalian(Anggota anggota, Buku buku) {
 
         super(anggota, buku); // Inheritance
     }
+
 
 
     @Override
@@ -28,6 +29,8 @@ public class TransaksiPengembalian extends Transaksi {
         System.out.println("Stok   = " + buku.getStok());
 
         buku.tambahStok();
-        System.out.println("\nPengembalian berhasil: " + anggota.getNama() + " mengembalikan " + buku.getJudul());
+        System.out.println("============================================================");
+        System.out.println("Pengembalian berhasil: " + anggota.getNama() + " mengembalikan " + buku.getJudul());
+        System.out.println("============================================================");
     }
 }
