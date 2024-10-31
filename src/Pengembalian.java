@@ -2,7 +2,7 @@ public class Pengembalian extends Transaksi {
 
     public Pengembalian(Anggota anggota, Buku buku) {
 
-        super(anggota, buku); // Inheritance
+        super(anggota, buku);
     }
 
 
