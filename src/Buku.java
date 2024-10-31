@@ -2,12 +2,18 @@ public class Buku extends InformasiPerpustakaan {
     private String penulis;
     private int stok;
 
-
     public Buku(String kode, String judul, String penulis, int stok) {
         super(kode, judul);
         this.penulis = penulis;
         this.stok = stok;
     }
+
+    public Buku(String kode, String judul) {
+        super(kode, judul);
+        this.penulis = "Tidak Diketahui";
+        this.stok = 0;
+    }
+
 
 
     public String getPenulis() {
