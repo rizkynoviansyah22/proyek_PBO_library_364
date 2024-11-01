@@ -1,6 +1,6 @@
 public abstract class Transaksi {
-    protected Anggota anggota;
-    protected Buku buku;
+    public Anggota anggota;
+    public Buku buku;
 
 
     public Transaksi(Anggota anggota, Buku buku) {
