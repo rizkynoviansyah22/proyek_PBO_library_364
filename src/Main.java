@@ -6,6 +6,9 @@ public class Main {
         Anggota anggota1 = new Anggota("110", "Eko");
         Anggota anggota2 = new Anggota("112", "Dimas");
 
+        Petugas petugas1 = new Petugas("Pak Budi", "2004");
+        Petugas petugas2 = new Petugas("Pak Joko", "2000");
+
         System.out.println("\n====================================================");
         System.out.println("Data Buku:");
         tampilkanInformasiBuku(buku1);
@@ -20,8 +23,10 @@ public class Main {
 
         System.out.println("\n=============== Transaksi Peminjaman ===============");
         Peminjaman peminjaman1 = new Peminjaman(anggota1, buku1);
+        petugas1.tampilkanPetugas();
         peminjaman1.pinjamBuku();
         Peminjaman peminjaman2 = new Peminjaman(anggota2, buku2);
+        petugas2.tampilkanPetugas();
         peminjaman2.pinjamBuku();
 
         System.out.println("\n============== Transaksi Pengembalian ==============");

@@ -7,7 +7,7 @@ public class Peminjaman extends Transaksi {
 
     @Override
     public void pinjamBuku() {
-        System.out.println("Anggota:");
+        System.out.println("\nAnggota:");
         System.out.println("ID   = " + anggota.getNim());
         System.out.println("Nama = " + anggota.getNama());
 
